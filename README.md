@@ -27,12 +27,11 @@ click-fit/
 │   │   ├── user.js            # Route for user management
 │   ├── server.js              # Main Node.js server
 │── frontend/
-│   ├── assets/
-│   │   ├── css/style.css      # CSS styles
-│   │   ├── js/script.js       # JavaScript (AJAX, interactions)
-│   │   ├── images/            # Static images
-│   ├── index.html             # Main page
-│── package.json               # Node.js dependencies
+│   ├── scripts/
+│   │   ├── script.js       # JavaScript (AJAX, interactions)
+│   │── styles/   
+│   │    ├── css/style.css      # CSS styles 
+│   ├── index.html             # Main page             
 │── README.md                  # Project documentation
 ```
 
@@ -88,5 +87,11 @@ Open `frontend/index.html` in a browser.
   - **Response:** `{ message: "User added successfully" }`
 
 ---
+
+🎨 UI Preview
+
+Here is a preview of the Click Fit user interface:
+![Click Fit Preview](result.png)
+
 
 💡 **Developed by Hamid Bouargalne** 🚀

@@ -16,9 +16,9 @@ const upload = multer({ storage });
 
 router.post("/", upload.single("image"), (req, res) => {
   if (!req.file) {
-    return res.status(400).json({ error: "Aucune image uploadée." });
+    return res.status(400).json({ error: "No image uploaded." });
   }
-  res.json({ message: "Upload réussi", file: req.file.filename });
+  res.json({ message: "Upload done", file: req.file.filename });
 });
 
 module.exports = router;

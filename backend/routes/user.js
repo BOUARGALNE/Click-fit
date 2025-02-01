@@ -9,10 +9,10 @@ router.post('/add', (req, res) => {
         [email, password, type],
         (error, results) => {
             if (error) {
-                res.status(500).json({ error: 'Error creating user' });
+                res.status(500).json({ error: 'Error adding user' });
                 return;
             }
-            res.json({ message: 'User created successfully' });
+            res.json({ message: 'User added successfully' });
         }
     );
 });

@@ -9,12 +9,12 @@ const userRoutes = require("./routes/user");
 // Middlewares
 app.use(cors());
 app.use(bodyParser.json());
-app.use("/uploads", express.static("uploads")); // Servir les fichiers uploadés
+app.use("/uploads", express.static("uploads")); //sauvgared uploaded images
 
 // Routes
 app.use("/api/upload", uploadRoutes);
 app.use("/api/user", userRoutes);
 
-// Démarrer le serveur
+// turn on server
 const PORT = 5000;
-app.listen(PORT, () => console.log(`Serveur démarré sur http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Server launched on http://localhost:${PORT}`));
